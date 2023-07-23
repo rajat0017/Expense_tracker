@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-body" >
+        <h1 class="card-title">EXPENSE TRACKER</h1>
+        <p class="card-text">Track Your Daily Expenses Here !</p>
+
+    </div>
+  <form id="form" >
+    <label for="expense">Enter Your Expenses</label>
+    <input type="text" id="expense" name="expense" required>
+    
+    <label for="catagary"> Enter Catagary</label>
+    <input type="text" id="catagary" name="catagary" required>
+    
+    <label for="email">Description</label>
+    <input type="text" id="description" name="description" >
+    
+    <input type="hidden" id="id" name="id" ><br>
+    <input type="submit" value="Submit">
+  </form>
+  <div id="appointments" class="appointment-list">
+    <h3>Expenses</h3>
+    <ul  id="users"> </ul>
+  </div>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+
+</body>
+</html>
